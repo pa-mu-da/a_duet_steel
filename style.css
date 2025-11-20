@@ -140,10 +140,17 @@ main {
 }
 
 .card h3 {
+    font-family: var(--font-body);
+    font-weight: 800;
     color: var(--steel-color);
     margin-bottom: 1rem;
     border-bottom: 1px dashed var(--border-color);
     padding-bottom: 0.5rem;
+}
+
+.subsection h3 {
+    font-family: var(--font-body);
+    font-weight: 800;
 }
 
 .rules-grid {
@@ -208,6 +215,11 @@ footer {
     background: #000;
     color: #666;
     border-top: 1px solid #333;
+}
+
+/* Suit Colors */
+.suit-red {
+    color: #ff4444;
 }
 
 /* Glitch Effect for Title */

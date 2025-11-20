@@ -7,7 +7,8 @@
     <title>A Duet of Steel - 鋼の二重奏</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+JP:wght@400;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+JP:wght@400;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -188,12 +189,45 @@
             </div>
         </section>
 
+        <section id="reprisals" class="panel">
+            <h2>リプライザル (Reprisals)</h2>
+            <p>敗北した側が勝者に課すことができる報復。スートごとに異なる2つの効果を持つので、どちらを適用するか選択する。</p>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3 class="suit-red">♥ Hearts (感情/関係)</h3>
+                    <ul class="detail-list">
+                        <li>次の決闘が終了するまで、ライバルはリプライザルを回復できない。</li>
+                        <li>ライバルのリプライザルのうち1つは、一度使用されると二度と回復できない。</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="suit-red">♦ Diamonds (資源/価値)</h3>
+                    <ul class="detail-list">
+                        <li>次の決闘が終了するまで、ライバルはスペシャルを回復できない。</li>
+                        <li>ライバルのスペシャルを1つ永久に削除する。</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>♠ Spades (暴力/強制)</h3>
+                    <ul class="detail-list">
+                        <li>次の決闘が終了するまで、ライバルの現在の手札枚数を1枚減らす。</li>
+                        <li>ライバルの最大手札枚数を永久に1枚減らす。</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>♣ Clubs (社会/行動)</h3>
+                    <ul class="detail-list">
+                        <li>次の決闘で、ライバルは先攻（Attack）を取ることができない。</li>
+                        <li>次の決闘の開始時、ライバルは手札のうち2枚をあなたに見せなければならない。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <section id="mechanics" class="panel">
             <h2>その他のメカニクス</h2>
 
             <dl class="mechanic-list">
-                <dt>リプライザル (Reprisals)</dt>
-                <dd>敗者が勝者に課す条件。手札上限の減少や、先攻を取れなくなるなど。</dd>
 
                 <dt>時の経過 (Passing Time)</dt>
                 <dd>決闘の間の回復や準備の期間。<br>
