@@ -152,7 +152,45 @@ section {
 .image-container img {
     width: 100%;
     height: auto;
+    filter: sepia(30%) contrast(120%) grayscale(50%);
+    border: 1px solid var(--secondary-color);
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: filter 0.3s;
+}
+
+.image-container img:hover {
+    filter: sepia(0%) contrast(100%) grayscale(0%);
+}
+
+.image-container.top-image {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.image-container.top-image img {
+    max-height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.intro-header {
+    flex: 0 0 30%;
+    min-width: 250px;
+}
+
+/* Grid Layout */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
+}
+
+.organization-section .grid-layout {
+    grid-template-columns: 2fr 1fr;
+}
+
+.details-section .grid-layout {
+    grid-template-columns: 1fr 2fr;
 }
 
 .img-col img {
