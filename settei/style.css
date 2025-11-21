@@ -152,20 +152,6 @@ section {
 .image-container img {
     width: 100%;
     height: auto;
-    filter: sepia(30%) contrast(120%) grayscale(50%);
-    border: 1px solid var(--secondary-color);
-    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.5);
-    transition: filter 0.3s;
-}
-
-.image-container img:hover {
-    filter: sepia(0%) contrast(100%) grayscale(0%);
-}
-
-/* Grid Layout */
-.grid-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 40px;
 }
 
