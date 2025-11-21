@@ -154,6 +154,23 @@
                         </ul>
                     </li>
                 </ol>
+                <p>決闘が終了していない場合、プレイされたカードは捨て札となり、防御側が攻撃側となって手順を繰り返します。</p>
+            </div>
+
+            <div class="subsection">
+                <h3>手札が尽きた場合 (Out of Cards?)</h3>
+                <ul class="detail-list">
+                    <li><strong>防御側 (Defender):</strong> 【耐え忍ぶ (Endure)】か【降伏 (Concede)】を選ぶ。</li>
+                    <li><strong>攻撃側 (Attacker):</strong> 手番が相手（Rival）に移る。</li>
+                    <li><strong>両者 (Both):</strong> 山札からカードを1枚めくる。
+                        <ul>
+                            <li><strong>♥ (Hearts):</strong> 引き分け (Draw)。和解 (Reconciliation) に1点。</li>
+                            <li><strong>♦ (Diamonds):</strong> ステイルメイト (Stalemate)。決着つかず、勝者なし。</li>
+                            <li><strong>♠ (Spades):</strong> 相打ち (Mutual annihilation)。共倒れとなり、ゲーム終了。</li>
+                            <li><strong>♣ (Clubs):</strong> ダブルKO (Double KO)。両者とも「時の経過 (Passing Time)」シーンを失う。</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </section>
 
@@ -197,13 +214,23 @@
                     <h3 class="suit-red">♥ Hearts (感情/関係)</h3>
                     <ul class="detail-list">
                         <li>次の決闘が終了するまで、ライバルはリプライザルを回復できない。</li>
-                        <li>ライバルのリプライザルのうち1つは、一度使用されると二度と回復できない。</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="suit-red">♥ Hearts (感情/関係)</h3>
+                    <ul class="detail-list">
+                        <li>次の決闘が終了するまで、ライバルはリプライザルを回復できない。</li>
                     </ul>
                 </div>
                 <div class="card">
                     <h3 class="suit-red">♦ Diamonds (資源/価値)</h3>
                     <ul class="detail-list">
                         <li>次の決闘が終了するまで、ライバルはスペシャルを回復できない。</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="suit-red">♦ Diamonds (資源/価値)</h3>
+                    <ul class="detail-list">
                         <li>ライバルのスペシャルを1つ永久に削除する。</li>
                     </ul>
                 </div>
@@ -211,6 +238,11 @@
                     <h3>♠ Spades (暴力/強制)</h3>
                     <ul class="detail-list">
                         <li>次の決闘が終了するまで、ライバルの現在の手札枚数を1枚減らす。</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>♠ Spades (暴力/強制)</h3>
+                    <ul class="detail-list">
                         <li>ライバルの最大手札枚数を永久に1枚減らす。</li>
                     </ul>
                 </div>
@@ -218,21 +250,26 @@
                     <h3>♣ Clubs (社会/行動)</h3>
                     <ul class="detail-list">
                         <li>次の決闘で、ライバルは先攻（Attack）を取ることができない。</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>♣ Clubs (社会/行動)</h3>
+                    <ul class="detail-list">
                         <li>次の決闘の開始時、ライバルは手札のうち2枚をあなたに見せなければならない。</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section id="mechanics" class="panel">
-            <h2>その他のメカニクス</h2>
-
-            <dl class="mechanic-list">
-
-                <dt>時の経過 (Passing Time)</dt>
-                <dd>決闘の間の回復や準備の期間。<br>
-                    リプライザルの回復、スペシャルの回復、手札の交換、相手の手札を捨てさせる、のいずれかを行える。</dd>
-            </dl>
+        <section id="passing-time" class="panel">
+            <h2>時の経過 (Passing Time)</h2>
+            <p>決闘の間の準備と回復 (Preparation and recover between Duels)。</p>
+            <ul class="detail-list">
+                <li>傷を癒やす様子を描写し、完全に排除されていない「報復 (Reprisals)」をすべて回復する。</li>
+                <li>資源を集める様子を描写し、消費した「スペシャル (Special)」を1つ回復する。</li>
+                <li>戦略を研究したり練習したりする様子を描写し、好きな枚数だけ手札を捨て、同数を山札から引く。</li>
+                <li>相手の資源を削ぐ様子を描写し、相手の手札を最大2枚捨てさせる。</li>
+            </ul>
         </section>
     </main>
 
